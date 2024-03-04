@@ -1,4 +1,156 @@
-.hero-main {    
-    height: 100vh;
+/* Hero.css */
+@import url('https://fonts.googleapis.com/css?family=Assistant:200');
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+    padding-left: 10%;
+    animation: fadeIn 1s ease-out;
+    height: 50vw;
     background-color: black;
 }
+
+.hero-image {
+    flex: 1;
+    background-image: url("hero_img.PNG");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Assistant', sans-serif;
+    margin-top: 7%;
+}
+
+.hero-title {
+    margin-bottom: 0.5rem;
+    color: white;
+    font-family: 'Assistant', sans-serif;
+    font-size: 90pt;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    /* Make the animation underline effect when hover */
+    position: relative;
+    transition: color 0.3s;
+
+    /* Add the underline effect */
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 2px;
+        left: 0;
+        background-color: #fff;
+        visibility: visible;
+        transform: scaleX(.3);
+        transition: all 0.5s ease-in-out;
+    }
+
+    &:hover:after {
+        visibility: visible;
+        transform: scaleX(.6);
+    }
+    
+}
+
+.hero-subtitle {
+    padding-top: 3%;
+    color: White;
+    font-size: 32pt;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.seperator {
+    width: 0;
+    height: 10;
+    border-left: 100vw solid transparent;
+    border-bottom: 28vh solid  white;
+    position: absolute;
+    margin-top: -16%;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1400px) {
+    .hero-title {
+        font-size: 70pt;
+    }
+    .hero-subtitle {
+        font-size: 25pt;
+    }
+    .seperator{
+        border-bottom: 24vh solid  white;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .hero-title {
+        font-size: 60pt;
+    }
+    .hero-subtitle {
+        font-size: 20pt;
+    }
+    .seperator{
+        border-bottom: 20vh solid  white;
+    }
+}
+@media screen and (max-width: 992px) {
+    .hero-title {
+        font-size: 50pt;
+    }
+    .hero-subtitle {
+        font-size: 15pt;
+    }
+    .seperator{
+        border-bottom: 17vh solid  white;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hero {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        height: 600px;
+    }
+
+    .hero-image {
+        order: 1;
+        margin-top: 10%;
+        background-position: center;
+    }
+
+    .hero-text {
+        order: 2;
+        margin-top: 3%;
+        flex: 0;
+    }
+
+    .hero-title {
+        font-size: 40pt;
+    }
+    .hero-subtitle {
+        font-size: 15pt;
+        padding-top: 1%;
+        line-height: .8;
+    }
+
+    .seperator{
+        width: 0;
+        height: 0;
+        border-left: 0;
+        border-bottom: 0;
+        position: absolute;
+        margin-top: -16%;
+        z-index: 1;
+    }
+    
+}
+
+
