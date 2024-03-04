@@ -1,3 +1,4 @@
-body {
+.App {
     height: 2000px;
+    background-color: rgb(88, 109, 109);
 }

@@ -7,7 +7,7 @@
     padding: 3%;
     padding-left: 10%;
     animation: fadeIn 1s ease-out;
-    height: 50vw;
+    height: 45vw;
     background-color: black;
 }
 
@@ -69,14 +69,48 @@
 }
 
 .seperator {
-    width: 0;
-    height: 10;
-    border-left: 100vw solid transparent;
-    border-bottom: 28vh solid  white;
     position: absolute;
-    margin-top: -16%;
+    right: 0px;
+    align-items: center;
+    width: 0;
+    height: 0;
+    border-left: 100vw solid transparent;
+    border-bottom: 200px solid  white;
+    margin-top: -200px;
     z-index: 1;
 }
+
+.icon-grid {
+    position: relative;
+    top:50px; 
+    right: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+    z-index: 2;
+}
+
+.icon-grid2 {
+    visibility: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 20px; /* Adjust the gap between icons if needed */
+    background-color: white;
+    padding: 10px;
+
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+
 
 @media screen and (max-width: 1400px) {
     .hero-title {
@@ -85,11 +119,15 @@
     .hero-subtitle {
         font-size: 25pt;
     }
-    .seperator{
-        border-bottom: 24vh solid  white;
+    .seperator {
+        border-bottom: 150px solid  white;
+        margin-top: -150px;
+    }
+    .icon-grid {
+        position: relative;
+        top:25px; 
     }
 }
-
 @media screen and (max-width: 1200px) {
     .hero-title {
         font-size: 60pt;
@@ -97,19 +135,26 @@
     .hero-subtitle {
         font-size: 20pt;
     }
-    .seperator{
-        border-bottom: 20vh solid  white;
-    }
 }
 @media screen and (max-width: 992px) {
     .hero-title {
-        font-size: 50pt;
+        font-size: 45pt;
     }
     .hero-subtitle {
-        font-size: 15pt;
+        font-size: 12pt;
     }
-    .seperator{
-        border-bottom: 17vh solid  white;
+    .seperator {
+        border-bottom: 120px solid  white;
+        margin-top: -120px;
+    }
+    .icon-grid {
+        position: relative;
+        top:15px;
+        right: 110px;
+    }
+    .icon {
+        width: 30px;
+        height: 30px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -149,6 +194,20 @@
         position: absolute;
         margin-top: -16%;
         z-index: 1;
+    }
+
+    .icon-grid {
+        visibility: hidden;
+    }
+
+    .icon-grid2 {
+        visibility: visible;
+        
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
     }
     
 }
