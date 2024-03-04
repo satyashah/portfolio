@@ -1,0 +1,58 @@
+
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+.sticky-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+    /* Add bottom border color white */
+    border-bottom: 1px solid #fff;
+}
+
+.link-format {
+    /* I want it to montserrat thin and large font size with space between letters */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+    letter-spacing: 0.1em;
+    /* text-transform: uppercase; */
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em;
+    padding: 0.5em 0;
+    /* Make the animation underline effect when hover */
+    position: relative;
+    transition: color 0.3s;
+
+    /* Add the underline effect */
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 2px;
+        left: 0;
+        background-color: #fff;
+        visibility: visible;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out;
+    }
+    /* Add the underline effect when hover */
+    &:hover:after {
+        visibility: visible;
+        transform: scaleX(.6);
+    }
+
+    /* Add the underline effect when active */
+    &:active:after,
+    &:focus:after {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+
+
+    
+}   
