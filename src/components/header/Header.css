@@ -11,6 +11,17 @@
     border-bottom: 1px solid #fff;
 }
 
+.logo {
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        margin-left: 10px;
+    }
+
+}
+
 .link-format {
     /* I want it to montserrat thin and large font size with space between letters */
     font-family: 'Montserrat', sans-serif;

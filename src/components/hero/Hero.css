@@ -31,7 +31,7 @@
     margin-bottom: 0.5rem;
     color: white;
     font-family: 'Assistant', sans-serif;
-    font-size: 90pt;
+    font-size: 8vw;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -63,9 +63,10 @@
 .hero-subtitle {
     padding-top: 3%;
     color: White;
-    font-size: 32pt;
+    font-size: 2vw;
     text-align: center;
     text-transform: uppercase;
+    line-height: 1;
 }
 
 .seperator {
@@ -75,15 +76,15 @@
     width: 0;
     height: 0;
     border-left: 100vw solid transparent;
-    border-bottom: 200px solid  white;
-    margin-top: -200px;
+    border-bottom: 10.2vw solid  white;
+    margin-top: -10vw;
     z-index: 1;
 }
 
 .icon-grid {
     position: relative;
-    top:50px; 
-    right: 150px;
+    top: 2vw; 
+    right: 8vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -103,60 +104,14 @@
 }
 
 .icon {
-    width: 40px;
-    height: 40px;
+    width: 2.5vw;
+    height: 2.5vw;
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 2;
 }
 
 
-
-@media screen and (max-width: 1400px) {
-    .hero-title {
-        font-size: 70pt;
-    }
-    .hero-subtitle {
-        font-size: 25pt;
-    }
-    .seperator {
-        border-bottom: 150px solid  white;
-        margin-top: -150px;
-    }
-    .icon-grid {
-        position: relative;
-        top:25px; 
-    }
-}
-@media screen and (max-width: 1200px) {
-    .hero-title {
-        font-size: 60pt;
-    }
-    .hero-subtitle {
-        font-size: 20pt;
-    }
-}
-@media screen and (max-width: 992px) {
-    .hero-title {
-        font-size: 45pt;
-    }
-    .hero-subtitle {
-        font-size: 12pt;
-    }
-    .seperator {
-        border-bottom: 120px solid  white;
-        margin-top: -120px;
-    }
-    .icon-grid {
-        position: relative;
-        top:15px;
-        right: 110px;
-    }
-    .icon {
-        width: 30px;
-        height: 30px;
-    }
-}
 @media screen and (max-width: 768px) {
     .hero {
         margin: 0;
@@ -187,13 +142,7 @@
     }
 
     .seperator{
-        width: 0;
-        height: 0;
-        border-left: 0;
-        border-bottom: 0;
-        position: absolute;
-        margin-top: -16%;
-        z-index: 1;
+        display: none;
     }
 
     .icon-grid {
@@ -210,6 +159,4 @@
         height: 30px;
     }
     
-}
-
-
+} 

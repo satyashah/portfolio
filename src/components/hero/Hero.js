@@ -9,7 +9,7 @@ import md_dk from "./md_dk.png"; // Import the image
 
 const Hero = () => {
     return (
-        <div>
+        <div id = "hero">
             <div className="hero">
                 <div className="hero-image">
                 </div>

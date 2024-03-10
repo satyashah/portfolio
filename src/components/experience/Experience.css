@@ -1,0 +1,153 @@
+.experience_container {
+    font: 'Assistant', sans-serif;
+    background-color: black;
+    color: white;
+    padding: 4%;
+    height: 70vw;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    width: 100%;
+    line-height: 1.5;
+    padding-left: 2vw;
+}
+
+.row {
+    display: flex;
+}
+
+.left-aligned {
+    text-align: left;
+}
+
+.right-aligned {
+    text-align: right;
+}
+
+
+.exp-logo {
+    height: 6vw;
+    width: 6vw;
+    background-image: url("medtronic_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.exp-title {
+    color: white;
+    font-family: 'Assistant', sans-serif;
+    font-size: 6vw;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.exp-subtitle {
+    margin-bottom: 2rem;
+    color: white;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1vw;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.exp-text {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20vw;
+    padding: 3%;
+    padding-top: 0;
+    background-color: black;
+}
+
+li {
+    padding-bottom: 1vw;
+}
+
+.expanded_text {
+    grid-column: span 2;
+    background-color: black;
+    color: white;
+    text-align: left;
+    font-size: 1.5vw;
+    line-height: 1;
+}
+
+.cleanLink {
+    color: lightblue;
+    text-decoration: none;
+    
+}
+
+.exp-box {
+    position: relative;
+    display: flex;
+    width: 100%;
+    font-family: 'Assistant', sans-serif;
+    font-size: 2.3vw;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    text-justify: center;
+    line-height: 2;
+    border-top: 2px solid #fff;
+}
+
+.exp-bottom-bord {
+    border-bottom: 2px solid #fff;
+}
+
+@media screen and (max-width: 1400px){
+    .experience_container {
+        height: 80vw;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .experience_container {
+        height: 90vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .experience_container {
+        padding-top: 50px;
+        height: 800px;
+    }
+    .exp-logo {
+        height: 100px;
+        width: 100px;
+    }
+    .exp-subtitle {
+        display: none;
+    }
+
+    .exp-title {
+        font-size: 40pt;
+    }
+    .grid-container {
+        grid-template-columns: auto;
+        gap: 0px;
+        font-size: 18pt;
+        padding-left: 30px;
+    }
+    .right-aligned {
+        text-align: left;
+    }
+
+    .expanded_text{
+        display: none !important;
+    }
+    .exp-box {
+        padding: 2% 0% 2% 0%; 
+    }
+}
