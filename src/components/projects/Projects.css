@@ -1,6 +1,6 @@
 
 .proj-section {
-    padding-top: 5vw;
+    padding-top: 2vw;
     background-color: white;
 }
 
@@ -13,11 +13,22 @@
     letter-spacing: 0.1em;
 }
 
+.proj-subtitle {
+    margin-bottom: 2rem;
+    color: black;
+    font-weight: bold;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1vw;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+}
+
 .projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* background-color: #fff; */
     padding: 2vw;
 }
 
@@ -25,7 +36,6 @@
     width: calc(20% - 20px);
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    /* border-radius: 4px; */
     
     overflow: hidden;
     transition: box-shadow 0.3s ease-in-out;
@@ -91,6 +101,9 @@
     }
     .project-card img {
         display: None;
+    }
+    .proj-title{
+        font-size: 30pt;
     }
 
     .project-card h3 {
