@@ -7,6 +7,13 @@ import in_dk from "./in_dk.png"; // Import the image
 import mail_dk from "./mail_dk.png"; // Import the image
 import md_dk from "./md_dk.png"; // Import the image
 
+const scrollToSection = (selector) => {
+    const section = document.querySelector(selector);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+};
+
 const Hero = () => {
     return (
         <div id = "hero">
@@ -20,6 +27,7 @@ const Hero = () => {
                             <p>Software Engineer</p>
                             <p>Machine Learning // Full Stack</p>
                         </span>
+                        <button className="button" onClick={() => scrollToSection('#projects')}>Go To Projects</button>
                     </div>
 
                     <div className="icon-grid2">

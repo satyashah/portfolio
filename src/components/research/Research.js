@@ -8,7 +8,7 @@ const Research = () => {
     return (
         <div id="research" className="research_container">
             <h1 className="rea-title">Research</h1>
-            <h3 className="rea-subtitle">Thanks to great professors and great colleges</h3>
+            <h3 className="rea-subtitle">Thanks to great professors and great colleagues</h3>
             <div className="rea-text">
                 <div className="rea-box">
                     <div className='inner-rea-box'>
@@ -39,11 +39,6 @@ const Research = () => {
                         </ul>    
                     </div>
                 </div>
-
-
-
-
-
                 <div className="rea-box rea-bottom-bord">
                     <div className='inner-rea-box'>
                         <div className="rea-logo" style={{backgroundImage: `url(${clark_logo})`}}>
@@ -75,6 +70,9 @@ const Research = () => {
                         </ul>
                     </div>
                 </div>
+            </div>
+
+            <div className="rea-seperator">
             </div>
         </div>
     );

@@ -3,7 +3,7 @@
     background-color: black;
     color: white;
     padding: 4%;
-    height: 65vw;
+    height: 60vw;
 }
 
 .rea-grid-container {
@@ -104,6 +104,7 @@
     border-left: 2px solid #fff;
     padding-left: 2vw;
 }
+
 
 @media screen and (max-width: 1400px){
     .research_container {
