@@ -103,7 +103,10 @@
         display: None;
     }
     .proj-title{
-        font-size: 30pt;
+        font-size: 45pt;
+    }
+    .proj-subtitle{
+        font-size: 10pt;
     }
 
     .project-card h3 {

@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Experience.css';
 import medtronic_logo from "./medtronic_logo.png"; // Import the image
 import raytheon_logo from "./raytheon_logo.png"; // Import the image
 import umd_logo from "./umd_logo.png"; // Import the image
-import tr_logo from "./tr_logo.png"; // Import the image
 
 const Experience = () => {
     return (

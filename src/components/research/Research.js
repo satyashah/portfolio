@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Research.css';
 import bsos_logo from "./bsos_logo.jpg"; // Import the image
 import clark_logo from "./clark_logo.png"; // Import the image

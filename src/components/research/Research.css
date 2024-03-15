@@ -108,23 +108,10 @@
     padding-left: 2vw;
 }
 
-/* 
-@media screen and (max-width: 1200px){
-    .rea-seperator{
-        margin-top: -.5vw;
-    }
-}
-
-@media screen and (max-width: 992px){
-    .rea-seperator{
-        margin-top: -1.5vw;
-    }
-} */
-
 @media screen and (max-width: 768px) {
-    .research_container {
+    .research {
         padding-top: 50px;
-        height: 700px;
+        height: 750px;
     }
 
     .rea-box {
@@ -167,5 +154,9 @@
     .rea-bottom-bord {
         border-left: 0px solid #fff;
         padding-left: 2vw;
+    }
+
+    .rea-seperator {
+        display: none;
     }
 }

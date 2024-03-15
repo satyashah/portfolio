@@ -1,5 +1,5 @@
 .education{
-    height: 65vw;
+    height: 57vw;
     background-color: white;
 }
 .page_seperator {
@@ -10,7 +10,7 @@
     height: 0;
     border-left: 100vw solid transparent;
     border-bottom: 10.2vw solid  black;
-    margin-top: -5vw;
+    margin-top: -4vw;
     z-index: 1;
 }
 
@@ -19,7 +19,7 @@
     justify-content: space-between;
     padding: 0% 3% 0% 3%;
     animation: fadeIn 1s ease-out;
-    height: 40vw;
+    height: 35vw;
     background-color: white;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .edu-text {
-    flex: 1;
+    flex: 1.5;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +43,7 @@
     margin-bottom: 0.5rem;
     color: rgb(0, 0, 0);
     font-family: 'Assistant', sans-serif;
-    font-size: 6vw;
+    font-size: 5vw;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -52,7 +52,7 @@
 .edu-subtitle {
     padding-top: 1%;
     color: rgb(0, 0, 0);
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-align: center;
     text-transform: capitalize;
     line-height: 1;
@@ -65,7 +65,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 20vw;
+    height: 16vw;
     padding: 3%;
     padding-top: 0;
     background-color: white;
@@ -75,7 +75,7 @@
 .box {
     height: 100%;
     font-family: 'Assistant', sans-serif;
-    font-size: 2.3vw;
+    font-size: 2vw;
     flex: 1;
     padding: 20px;
     padding-top: 0%;
